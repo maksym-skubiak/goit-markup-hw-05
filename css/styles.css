@@ -580,6 +580,7 @@ ul {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -593,7 +594,7 @@ ul {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
   max-width: 408px;
   min-height: 584px;
@@ -601,8 +602,6 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -681,10 +680,11 @@ ul {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-cloce-btn {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
@@ -693,18 +693,37 @@ ul {
   justify-content: center;
   margin-left: auto;
   margin-bottom: 24px;
-  border: 1px solid #8e8f99;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   fill: #2e2f42;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  cursor: pointer;
 }
 
-.modal-cloce-btn:hover {
+ .modal-cloce-btn:hover{
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-cloce-btn:hover .modal-cloce-icon{
+  fill: #fff;
+}
+
+.modal-cloce-btn:focus .modal-cloce-icon {
+  fill: #fff;
+}
+
+.modal-cloce-btn:focus {
   background-color: #404bbf;
   fill: #fff;
   border: none;
 }
+
+
 
 .modal-check {
   margin-bottom: 24px;
