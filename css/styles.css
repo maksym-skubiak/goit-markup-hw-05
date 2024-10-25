@@ -536,7 +536,6 @@ ul {
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
-  margin-left: 24px;
 }
 
 .email-subscribe-icon {
@@ -546,6 +545,7 @@ ul {
 
 .subscribe-form {
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-input {
@@ -601,6 +601,8 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -611,6 +613,9 @@ ul {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
+}
+
+.modal-form {
 }
 
 .modal-label {
