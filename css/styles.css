@@ -644,6 +644,10 @@ ul {
   height: 40px;
 }
 
+.modal-wrapper {
+  margin-bottom: 8px;
+}
+
 .modal-btn {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
