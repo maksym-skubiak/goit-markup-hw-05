@@ -533,9 +533,10 @@ ul {
   border: none;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
+  cursor: pointer;
 }
 
 .email-subscribe-icon {
@@ -549,13 +550,17 @@ ul {
 }
 
 .subscribe-input {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding-left: 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .subscribe-label {
@@ -566,7 +571,7 @@ ul {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* --------------------Modal------------------------ */
@@ -581,6 +586,8 @@ ul {
   visibility: hidden;
   pointer-events: none;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -602,6 +609,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -680,7 +688,7 @@ ul {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-cloce-btn {
@@ -704,12 +712,12 @@ ul {
   cursor: pointer;
 }
 
- .modal-cloce-btn:hover{
+.modal-cloce-btn:hover {
   background-color: #404bbf;
   border: none;
 }
 
-.modal-cloce-btn:hover .modal-cloce-icon{
+.modal-cloce-btn:hover .modal-cloce-icon {
   fill: #fff;
 }
 
@@ -722,8 +730,6 @@ ul {
   fill: #fff;
   border: none;
 }
-
-
 
 .modal-check {
   margin-bottom: 24px;
