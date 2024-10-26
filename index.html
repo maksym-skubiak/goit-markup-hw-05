@@ -538,7 +538,14 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-wrapper">
+          <div class="privacy-wrapper">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="truee"
+              class="modal-check-input visually-hidden"
+            />
             <label for="user-privacy" class="modal-check-label">
               <span>
                 <svg width="10" height="8" class="modal-check-icon">
@@ -548,14 +555,6 @@
               I accept the terms and conditions of the
               <a class="modal-check-link" href="">Privacy Policy </a>
             </label>
-
-            <input
-              type="checkbox"
-              name="user-privacy"
-              id="user-privacy"
-              value="truee"
-              class="modal-check-input visually-hidden"
-            />
           </div>
         </form>
         <button type="submit" class="modal-btn">Send</button>

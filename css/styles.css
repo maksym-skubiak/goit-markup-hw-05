@@ -652,8 +652,12 @@ ul {
   fill: #4d5ae5;
 }
 
+.modal-input:focus {
+  background-color: #4d5ae5;
+}
+
 .modal-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-btn {
@@ -695,6 +699,10 @@ ul {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
+}
+
+.modal-input-textarea:focus {
+  border-color: #4d5ae5;
 }
 
 .input-wrapper {
@@ -755,7 +763,7 @@ ul {
 }
 .modal-check-label {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -789,4 +797,8 @@ ul {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+.privacy-wrapper {
+  margin-bottom: 24px;
 }
