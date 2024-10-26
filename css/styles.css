@@ -633,7 +633,12 @@ ul {
   cursor: pointer;
 }
 
-.modal-cloce-btn:hover .modal-cloce-btn:focus {
+.modal-cloce-btn:hover {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-cloce-btn:focus {
   background-color: #404bbf;
   border: none;
 }
@@ -764,7 +769,7 @@ ul {
 .modal-check-icon {
 }
 
-.modal-check-input:checked + .modal-check-label span {
+.modal-check-input:checked + .user-privacy-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
