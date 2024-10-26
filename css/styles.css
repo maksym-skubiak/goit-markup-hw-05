@@ -794,11 +794,7 @@ ul {
 }
 
 .user-privacy-span {
-  /* display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-  margin-right: 8px; */
+  display: inline-flex;
 }
 
 .modal-btn {
